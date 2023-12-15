@@ -291,7 +291,7 @@ En utilisant ces 16 valeurs (préfixée par 8 octets, par exemple `AAAAAAAA`), e
 Une de ces 16 valeurs correspond forcément aussi à la fin du message de retour.
 
 Sauf que la fin du message chiffré n'est pas toujours la même.  
-Après quelques tests, et en analysant le comportement au niveau du serveur, on se rend compte que le certiticat généré `cert_der` n'a pas toujours la même longueur. La variation opère au niveau de la signature qui est positionnée en toute fin (au niveau d la signature).  
+Après quelques tests, et en analysant le comportement au niveau du serveur, on se rend compte que le certiticat généré `cert_der` n'a pas toujours la même longueur. La variation opère au niveau de la signature qui est positionnée en toute fin.  
 On va donc utiliser les 16 derniers octets renvoyés le plus grand nombre de fois, comme référence de fin de message.
 
 Maintenant que la fin de message est déterminée, on va pouvoir "remonter" caractère par caractère vers le début.
@@ -430,4 +430,4 @@ $ ./decompressed_firmware
 [INFO] Firmware execution completed.
 ```
 
-Dans les 2 cas, on obtient facilement le flag : `DGHACK{WellDone.YouFoundTh3Secr3tF1rmware!}`
+Dans les 2 cas, on obtient facilement le 3ème et dernier flag : `DGHACK{WellDone.YouFoundTh3Secr3tF1rmware!}`
