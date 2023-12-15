@@ -138,7 +138,7 @@ Voici un schéma, issu d'un article [Wikipedia](https://fr.wikipedia.org/wiki/Mo
 ![principe de chiffrement AES en mode CTR](schema_AES_CTR.png)
 
 
-Donc si $ P$ est le message en clair, $C_{key}$ la clé chiffrée et $C$ le message chiffré, on a alors la correspondance suivante :
+Donc si $P$ est le message en clair, $C_{key}$ la clé chiffrée et $C$ le message chiffré, on a alors la correspondance suivante :
 
 $$ C = C_{key} \oplus P $$
 
